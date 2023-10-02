@@ -34,8 +34,7 @@ def get_birthdays_per_week(users):
     return dict_of_births
 
 
-if __name__ == '__main__':
-    
+if __name__ == '__main__':   
     users = [{"name": "Bill Gates", "birthday": date(1955, 10, 28)},
            {"name": "Antony Cheeper", "birthday": date(1955, 12, 12)},
            {"name": "Antony3112 Cheeper", "birthday": date(1955, 12, 31)},           
