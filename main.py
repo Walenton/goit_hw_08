@@ -10,16 +10,14 @@ def get_peiod(start_day, days = 7):
     return result
 
 
-
 def get_birthdays_per_week(users): 
-    start_day = date.today()#date(2023, 12, 27)#.today()
+    start_day = date.today()
     dict_of_births = {}   
 
     if len(users) == 0:
         return dict_of_births
     
     period = get_peiod(start_day)
-    #print(period)
     for i in users:      
         name = i['name'].split(' ')[0]
         day_of_birth = i['birthday'].day, i['birthday'].month
@@ -37,7 +35,7 @@ def get_birthdays_per_week(users):
 
 
 if __name__ == '__main__':
-    #users = []
+    
     users = [{"name": "Bill Gates", "birthday": date(1955, 10, 28)},
            {"name": "Antony Cheeper", "birthday": date(1955, 12, 12)},
            {"name": "Antony3112 Cheeper", "birthday": date(1955, 12, 31)},           
